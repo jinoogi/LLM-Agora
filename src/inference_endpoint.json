@@ -1,6 +1,6 @@
 {
     "llama": {
-        "API_URL": "",
+        "API_URL": "http://localhost:8000/v1/completions",
         "headers": {
             "Authorization": "Bearer ",
             "Content-Type": "application/json"

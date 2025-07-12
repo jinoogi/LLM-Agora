@@ -41,28 +41,28 @@ def load_json(prompt_path, endpoint_path):
 
     return prompt_dict, endpoint_dict
 
-def construct_message(agent_context, instruction, idx):
-    prefix_string = "Here are a list of opinions from different agents: "
+# def construct_message(agent_context, instruction, idx):
+#     prefix_string = "Here are a list of opinions from different agents: "
 
-    prefix_string = prefix_string + agent_context + "\n\n Write a summary of the different opinions from each of the individual agent."
+#     prefix_string = prefix_string + agent_context + "\n\n Write a summary of the different opinions from each of the individual agent."
 
-    message = [{"role": "user", "content": prefix_string}]
+#     message = [{"role": "user", "content": prefix_string}]
 
-    try:
-        completion = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo-0613",
-            messages=message,
-            max_tokens=256,
-            n=1
-        )['choices'][0]['message']['content']
-    except:
-        print("retrying ChatGPT due to an error......")
-        time.sleep(5)
-        return construct_message(agent_context, instruction, idx)
+#     try:
+#         completion = openai.ChatCompletion.create(
+#             model="gpt-3.5-turbo-0613",
+#             messages=message,
+#             max_tokens=256,
+#             n=1
+#         )['choices'][0]['message']['content']
+#     except:
+#         print("retrying ChatGPT due to an error......")
+#         time.sleep(5)
+#         return construct_message(agent_context, instruction, idx)
 
-    prefix_string = f"Here is a summary of responses from other agents: {completion}"
-    prefix_string = prefix_string + "\n\n Use this summarization carefully as additional advice, can you provide an updated answer? Make sure to state your answer at the end of the response." + instruction
-    return prefix_string
+#     prefix_string = f"Here is a summary of responses from other agents: {completion}"
+#     prefix_string = prefix_string + "\n\n Use this summarization carefully as additional advice, can you provide an updated answer? Make sure to state your answer at the end of the response." + instruction
+#     return prefix_string
 
 def summarize_message(agent_contexts, instruction, idx):
     prefix_string = "Here are a list of opinions from different agents: "
@@ -73,10 +73,10 @@ def summarize_message(agent_contexts, instruction, idx):
 
         prefix_string = prefix_string + response
 
-    prefix_string = prefix_string + "\n\n Write a summary of the different opinions from each of the individual agent."
-    completion = construct_message(prefix_string, instruction, idx)
+    # prefix_string = prefix_string + "\n\n Write a summary of the different opinions from each of the individual agent."
+    # completion = construct_message(prefix_string, instruction, idx)
 
-    return completion
+    return prefix_string
 
 def generate_math(agents):
     a, b, c, d, e, f = np.random.randint(0, 30, size=6)
@@ -103,20 +103,25 @@ if __name__ == "__main__":
         API_URL = endpoint_dict[model]["API_URL"]
         headers = endpoint_dict[model]["headers"]
         payload = {
-            "inputs": formatted_prompt,
-            "parameters": {
-                "max_new_tokens": 256
-            }
+            "prompt": formatted_prompt,
+            "max_tokens" :256
         }
         try:
             resp = requests.post(API_URL, json=payload, headers=headers)
             response = resp.json()
+            print("payload 전문:",payload)
+            print("response 전문:",response)
         except:
             print("retrying due to an error......")
             time.sleep(5)
             return generate_answer(model, formatted_prompt)
-        
-        return {"model": model, "content": response[0]["generated_text"]}
+        print("- - - - - - - - - 디버깅 시작- - - - - - - - -  \n")    
+        # print("response 전문:",response)
+        print("모델:",model)
+        print("질문:",formatted_prompt)
+        print("응답:",response["choices"][0]["text"])
+        print("- - - - - - - - - -디버깅 끝 - - - - - - - -  \n")   
+        return {"model": model, "content": response["choices"][0]["text"]}
     
     def prompt_formatting(model, instruction, cot):
         if model == "alpaca" or model == "orca":
@@ -138,11 +143,11 @@ if __name__ == "__main__":
 
     generated_description = []
 
-    for round in tqdm(range(evaluation)):
+    for round in tqdm(range(evaluation)): # 100번 실행
         agent_contexts, content, question_prompt, answer = generate_math(agents=model_list)
 
         print(f"# Question No.{round+1} starts...")
-
+        print("\n","에이전트 콘텍스트들:",agent_contexts,"\n")
         message = []
 
         # Debate
@@ -154,7 +159,11 @@ if __name__ == "__main__":
                     agent_contexts[i].append(prompt_formatting(agent_contexts[i][-1]["model"], message[-1], args.cot))
 
             # Generate new response based on summarized response
+            x=0
             for agent_context in agent_contexts:
+                x=x+1
+                print("길이:",len(agent_contexts),"x:",x)
+                # print("\n","에이전트 콘텍스트:",agent_context,"\n")
                 completion = generate_answer(agent_context[-1]["model"], agent_context[-1]["content"])
                 agent_context.append(completion)
 

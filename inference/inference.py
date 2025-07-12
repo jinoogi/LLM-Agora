@@ -98,7 +98,7 @@ if __name__ == "__main__":
         payload = {
             "inputs": formatted_prompt,
             "parameters": {
-                "max_new_tokens": 256
+                "max_new_tokens": 10
             }
         }
         try:

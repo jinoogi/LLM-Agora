@@ -42,28 +42,28 @@ def load_json(prompt_path, endpoint_path):
 
     return prompt_dict, endpoint_dict
 
-def construct_message(agent_context, instruction, idx):
-    prefix_string = "Here are a list of opinions from different agents: "
+# def construct_message(agent_context, instruction, idx):
+#     prefix_string = "Here are a list of opinions from different agents: "
 
-    prefix_string = prefix_string + agent_context + "\n\n Write a summary of the different opinions from each of the individual agent."
+#     prefix_string = prefix_string + agent_context + "\n\n Write a summary of the different opinions from each of the individual agent."
 
-    message = [{"role": "user", "content": prefix_string}]
+#     message = [{"role": "user", "content": prefix_string}]
 
-    try:
-        completion = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo-0613",
-            messages=message,
-            max_tokens=256,
-            n=1
-        )['choices'][0]['message']['content']
-    except:
-        print("retrying ChatGPT due to an error......")
-        time.sleep(5)
-        return construct_message(agent_context, instruction, idx)
+#     try:
+#         completion = openai.ChatCompletion.create(
+#             model="gpt-3.5-turbo-0613",
+#             messages=message,
+#             max_tokens=256,
+#             n=1
+#         )['choices'][0]['message']['content']
+#     except:
+#         print("retrying ChatGPT due to an error......")
+#         time.sleep(5)
+#         return construct_message(agent_context, instruction, idx)
 
-    prefix_string = f"Here is a summary of responses from other agents: {completion}"
-    prefix_string = prefix_string + "\n\n Use this summarization carefully as additional advice, can you provide an updated answer? Make sure to state your answer at the end of the response." + instruction
-    return prefix_string
+#     prefix_string = f"Here is a summary of responses from other agents: {completion}"
+#     prefix_string = prefix_string + "\n\n Use this summarization carefully as additional advice, can you provide an updated answer? Make sure to state your answer at the end of the response." + instruction
+#     return prefix_string
 
 def summarize_message(agent_contexts, instruction, idx):
     prefix_string = "Here are a list of opinions from different agents: "
@@ -74,10 +74,10 @@ def summarize_message(agent_contexts, instruction, idx):
 
         prefix_string = prefix_string + response
 
-    prefix_string = prefix_string + "\n\n Write a summary of the different opinions from each of the individual agent."
-    completion = construct_message(prefix_string, instruction, idx)
+    # prefix_string = prefix_string + "\n\n Write a summary of the different opinions from each of the individual agent."
+    # completion = construct_message(prefix_string, instruction, idx)
 
-    return completion
+    return prefix_string
 
 def generate_gsm(agents, question):
     agent_contexts = [[{"model": agent, "content": f"Can you solve the following math problem? {question} Explain your reasoning. Your final answer should be a single numerical number, in the form \\boxed{{answer}}, at the end of your response."}] for agent in agents]
@@ -98,10 +98,12 @@ if __name__ == "__main__":
         API_URL = endpoint_dict[model]["API_URL"]
         headers = endpoint_dict[model]["headers"]
         payload = {
-            "inputs": formatted_prompt,
-            "parameters": {
-                "max_new_tokens": 256
-            }
+            "prompt": formatted_prompt,
+            "max_tokens": 256
+            # "inputs": formatted_prompt,
+            # "parameters": {
+            #     "max_new_tokens": 256
+            # }
         }
         try:
             resp = requests.post(API_URL, json=payload, headers=headers)
@@ -111,7 +113,7 @@ if __name__ == "__main__":
             time.sleep(5)
             return generate_answer(model, formatted_prompt)
         
-        return {"model": model, "content": response[0]["generated_text"]}
+        return {"model": model, "content": response["choices"][0]["text"]}
     
     def prompt_formatting(model, instruction, cot):
         if model == "alpaca" or model == "orca":
@@ -140,6 +142,7 @@ if __name__ == "__main__":
         answer = questions[idx]["answer"]
 
         agent_contexts = generate_gsm(model_list, question)
+        # print("원시구조:",agent_contexts)
 
         print(f"# Question No.{idx+1} starts...")
 
@@ -149,14 +152,20 @@ if __name__ == "__main__":
         for debate in range(rounds+1):
             # Refer to the summarized previous response
             if debate != 0:
+                message = []
                 message.append(summarize_message(agent_contexts, question, 2 * debate - 1))
+                # print("\n\t 메시지:",message)
                 for i in range(len(agent_contexts)):
-                    agent_contexts[i].append(prompt_formatting(agent_contexts[i][-1]["model"], message, args.cot))
+                    agent_contexts[i].append(prompt_formatting(agent_contexts[i][-1]["model"], agent_contexts[i][0]["content"]+message[0], args.cot))
 
             for agent_context in agent_contexts:
                 # Generate new response based on summarized response
+                # print("\n\tagent_context:",agent_context[-1]) 
                 completion = generate_answer(agent_context[-1]["model"], agent_context[-1]["content"])
+                # print("\tcompletion:",completion)
                 agent_context.append(completion)
+
+
 
         print(f"# Question No.{idx+1} debate is ended.")
 
@@ -166,7 +175,7 @@ if __name__ == "__main__":
             f"{args.model_3}": [agent_contexts[2][1]["content"], agent_contexts[2][3]["content"], agent_contexts[2][-1]["content"]]
         }
         response_summarization = [
-            message[0], message[1]
+            message[0]
         ]
         generated_description.append({"question_id": idx, "question": question, "agent_response": models_response, "summarization": response_summarization, "answer": answer})
 

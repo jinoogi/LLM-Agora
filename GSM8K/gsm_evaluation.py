@@ -44,20 +44,33 @@ def solve_math_problems(input_str):
     return None
 
 def parse_answer(input_str):
-    pattern = r"([0-9]*)"
-    matches = re.findall(pattern, input_str)
-
-    solution = None
-
-    for match_str in matches[::-1]:
-        solution = re.sub(r"[^0-9.]", "", match_str)
+    # 먼저 \boxed{} 패턴을 찾음
+    boxed_pattern = r'\\boxed\{([^}]+)\}'
+    boxed_match = re.search(boxed_pattern, input_str)
+    if boxed_match:
+        solution = boxed_match.group(1)
+        # 숫자만 추출
+        solution = re.sub(r"[^0-9.]", "", solution)
         if solution:
-            break
+            return float(solution)
 
-    if solution:
-        return float(solution)
-    else:
-        return solution
+    return None
+    
+    # # \boxed{} 패턴이 없으면 기존 방식 사용
+    # pattern = r"([0-9]*)"
+    # matches = re.findall(pattern, input_str)
+
+    # solution = None
+
+    # for match_str in matches[::-1]:
+    #     solution = re.sub(r"[^0-9.]", "", match_str)
+    #     if solution:
+    #         break
+
+    # if solution:
+    #     return float(solution)
+    # else:
+    #     return solution
 
 def answer_check(List, answer):
     if answer in List: 
