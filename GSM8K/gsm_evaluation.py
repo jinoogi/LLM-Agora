@@ -73,10 +73,11 @@ def parse_answer(input_str):
     #     return solution
 
 def answer_check(List, answer):
-    if answer in List: 
-        return 1.0
-    else:
-        return 0.0
+    print("predicitons:",List,"\tanswer:",answer)
+    # 맞춘 개수를 리스트 길이로 나누어 정확도 계산
+    correct_count = sum(1 for pred in List if pred == answer)
+    accuracy = correct_count / len(List)
+    return accuracy
 
 def compute_accuracy(gt, pred_solutions):
     answers = solve_math_problems(gt)
