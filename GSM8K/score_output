@@ -1,0 +1,302 @@
+[
+  {
+    "file": "gsm_result_cat_adversarial__qwen_A_qwen_B_qwen_C_20250713_144501.json",
+    "accuracy": {
+      "qwen_A": [
+        0.733,
+        0.733,
+        0.6
+      ],
+      "qwen_B": [
+        0.767,
+        0.7,
+        0.667
+      ],
+      "qwen_C": [
+        0.8,
+        0.767,
+        0.633
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_cat_adversarial__qwen_A_qwen_B_qwen_C_20250713_144538.json",
+    "accuracy": {
+      "qwen_A": [
+        0.767,
+        0.7,
+        0.633
+      ],
+      "qwen_B": [
+        0.767,
+        0.7,
+        0.533
+      ],
+      "qwen_C": [
+        0.667,
+        0.733,
+        0.5
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_cat_adversarial__qwen_A_qwen_B_qwen_C_20250713_144600.json",
+    "accuracy": {
+      "qwen_A": [
+        0.767,
+        0.867,
+        0.6
+      ],
+      "qwen_B": [
+        0.767,
+        0.767,
+        0.567
+      ],
+      "qwen_C": [
+        0.767,
+        0.7,
+        0.567
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_cat_adversarial__qwen_A_qwen_B_qwen_C_20250713_144750.json",
+    "accuracy": {
+      "qwen_A": [
+        0.7,
+        0.667,
+        0.433
+      ],
+      "qwen_B": [
+        0.667,
+        0.667,
+        0.433
+      ],
+      "qwen_C": [
+        0.767,
+        0.667,
+        0.4
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_cat_adversarial__qwen_A_qwen_B_qwen_C_20250713_144755.json",
+    "accuracy": {
+      "qwen_A": [
+        0.733,
+        0.733,
+        0.5
+      ],
+      "qwen_B": [
+        0.733,
+        0.733,
+        0.467
+      ],
+      "qwen_C": [
+        0.667,
+        0.7,
+        0.5
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_qwen_A_qwen_B_qwen_C_20250713_144446.json",
+    "accuracy": {
+      "qwen_A": [
+        0.8,
+        0.8,
+        0.567
+      ],
+      "qwen_B": [
+        0.8,
+        0.8,
+        0.567
+      ],
+      "qwen_C": [
+        0.8,
+        0.8,
+        0.567
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_qwen_A_qwen_B_qwen_C_20250713_144656.json",
+    "accuracy": {
+      "qwen_A": [
+        0.667,
+        0.667,
+        0.367
+      ],
+      "qwen_B": [
+        0.833,
+        0.7,
+        0.467
+      ],
+      "qwen_C": [
+        0.833,
+        0.7,
+        0.467
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_qwen_A_qwen_B_qwen_C_20250713_144715.json",
+    "accuracy": {
+      "qwen_A": [
+        0.833,
+        0.767,
+        0.567
+      ],
+      "qwen_B": [
+        0.767,
+        0.8,
+        0.533
+      ],
+      "qwen_C": [
+        0.833,
+        0.8,
+        0.567
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_qwen_A_qwen_B_qwen_C_20250713_144722.json",
+    "accuracy": {
+      "qwen_A": [
+        0.8,
+        0.833,
+        0.633
+      ],
+      "qwen_B": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "qwen_C": [
+        0.767,
+        0.7,
+        0.633
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_qwen_A_qwen_B_qwen_C_20250714_065004.json",
+    "accuracy": {
+      "qwen_A": [
+        0.767,
+        0.733,
+        0.6
+      ],
+      "qwen_B": [
+        0.833,
+        0.833,
+        0.6
+      ],
+      "qwen_C": [
+        0.8,
+        0.767,
+        0.633
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_single_cat_adversarial_qwen_A_20250714_073711.json",
+    "accuracy": {
+      "qwen_A": [
+        0.8,
+        0.667,
+        0.633
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_single_cat_adversarial_qwen_A_20250714_073716.json",
+    "accuracy": {
+      "qwen_A": [
+        0.667,
+        0.633,
+        0.567
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_single_cat_adversarial_qwen_A_20250714_073732.json",
+    "accuracy": {
+      "qwen_A": [
+        0.733,
+        0.667,
+        0.733
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_single_cat_adversarial_qwen_A_20250714_073739.json",
+    "accuracy": {
+      "qwen_A": [
+        0.7,
+        0.633,
+        0.5
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_single_cat_adversarial_qwen_A_20250714_073808.json",
+    "accuracy": {
+      "qwen_A": [
+        0.767,
+        0.7,
+        0.5
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_single_qwen_A_20250714_073612.json",
+    "accuracy": {
+      "qwen_A": [
+        0.533,
+        0.533,
+        0.4
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_single_qwen_A_20250714_073633.json",
+    "accuracy": {
+      "qwen_A": [
+        0.5,
+        0.533,
+        0.333
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_single_qwen_A_20250714_073704.json",
+    "accuracy": {
+      "qwen_A": [
+        0.5,
+        0.467,
+        0.333
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_single_qwen_A_20250714_073712.json",
+    "accuracy": {
+      "qwen_A": [
+        0.433,
+        0.4,
+        0.333
+      ]
+    }
+  },
+  {
+    "file": "gsm_result_single_qwen_A_20250714_073719.json",
+    "accuracy": {
+      "qwen_A": [
+        0.467,
+        0.567,
+        0.4
+      ]
+    }
+  }
+]
