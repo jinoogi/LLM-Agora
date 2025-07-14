@@ -47,5 +47,34 @@
             "Authorization": "Bearer ",
             "Content-Type": "application/json"
         }
+    },
+    "qwen": {
+        "API_URL": "http://localhost:8000/v1/completions",
+        "headers": {
+            "Authorization": "Bearer ",
+            "Content-Type": "application/json"
+        }
+    },
+    "qwen_A": {
+        "API_URL": "http://localhost:8000/v1/completions",
+        "headers": {
+            "Authorization": "Bearer ",
+            "Content-Type": "application/json"
+        }
+    },
+    "qwen_B": {
+        "API_URL": "http://localhost:8000/v1/completions",
+        "headers": {
+            "Authorization": "Bearer ",
+            "Content-Type": "application/json"
+        }
+    },
+    "qwen_C": {
+        "API_URL": "http://localhost:8000/v1/completions",
+        "headers": {
+            "Authorization": "Bearer ",
+            "Content-Type": "application/json"
+        }
     }
+
 }
