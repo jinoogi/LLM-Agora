@@ -1,8 +1,5 @@
-import enum
 import requests
-# import openai
 import json
-import numpy as np
 import random
 import time
 from tqdm import tqdm
@@ -10,18 +7,11 @@ import argparse
 import os
 from datetime import datetime
 
-from urllib3 import response
-
 def args_parse():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_1", type=str)
     parser.add_argument("--model_2", type=str)
     parser.add_argument("--model_3", type=str)
-    parser.add_argument(
-        "--API_KEY",
-        type=str,
-        help="your OpenAI API key to use gpt-3.5-turbo"
-    )
     parser.add_argument("--round", default=2, type=int)
     parser.add_argument(
         "--cot",
@@ -47,29 +37,6 @@ def load_json(prompt_path, endpoint_path):
 
     return prompt_dict, endpoint_dict
 
-# def construct_message(agent_context, instruction, idx):
-#     prefix_string = "Here are a list of opinions from different agents: "
-
-#     prefix_string = prefix_string + agent_context + "\n\n Write a summary of the different opinions from each of the individual agent."
-
-#     message = [{"role": "user", "content": prefix_string}]
-
-#     try:
-#         completion = openai.ChatCompletion.create(
-#             model="gpt-3.5-turbo-0613",
-#             messages=message,
-#             max_tokens=256,
-#             n=1
-#         )['choices'][0]['message']['content']
-#     except:
-#         print("retrying ChatGPT due to an error......")
-#         time.sleep(5)
-#         return construct_message(agent_context, instruction, idx)
-
-#     prefix_string = f"Here is a summary of responses from other agents: {completion}"
-#     prefix_string = prefix_string + "\n\n Use this summarization carefully as additional advice, can you provide an updated answer? Make sure to state your answer at the end of the response." + instruction
-#     return prefix_string
-
 def summarize_message(agent_contexts, instruction, idx):
     prefix_string = "Here are a list of opinions from different agents: "
 
@@ -78,9 +45,6 @@ def summarize_message(agent_contexts, instruction, idx):
         response = "\n\n One agent response: ```{}```".format(agent_response)
 
         prefix_string = prefix_string + response
-
-    # prefix_string = prefix_string + "\n\n Write a summary of the different opinions from each of the individual agent."
-    # completion = construct_message(prefix_string, instruction, idx)
 
     return prefix_string
 
@@ -94,7 +58,6 @@ def read_jsonl(path: str):
 
 if __name__ == "__main__":
     args = args_parse()
-    # openai.api_key = args.API_KEY
     model_list = [args.model_1, args.model_2, args.model_3]
 
     prompt_dict, endpoint_dict = load_json("src/prompt_template.json", "src/inference_endpoint.json")
@@ -105,13 +68,9 @@ if __name__ == "__main__":
         payload = {
             "prompt": formatted_prompt,
             "max_tokens": 512,
-            "temperature": 0.2,
+            "temperature": 1,
             "repetition_penalty": 1.1,
             "enable_thinking": False
-            # "inputs": formatted_prompt,
-            # "parameters": {
-            #     "max_new_tokens": 256
-            # }
         }
         try:
             resp = requests.post(API_URL, json=payload, headers=headers)
@@ -160,6 +119,8 @@ if __name__ == "__main__":
 
         # Debate
         for debate in range(rounds+1):
+            # print("--------------------- debate:",debate,"---------------------")
+
             # Refer to the summarized previous response
             if debate == 0:
                 for i in range(len(agent_contexts)):
@@ -186,11 +147,6 @@ if __name__ == "__main__":
 
         print(f"# Question No.{idx+1} debate is ended.")
 
-        # models_response = {
-        #     f"{args.model_1}": [agent_contexts[0][1]["content"], agent_contexts[0][3]["content"], agent_contexts[0][-1]["content"]],
-        #     f"{args.model_2}": [agent_contexts[1][1]["content"], agent_contexts[1][3]["content"], agent_contexts[1][-1]["content"]],
-        #     f"{args.model_3}": [agent_contexts[2][1]["content"], agent_contexts[2][3]["content"], agent_contexts[2][-1]["content"]]
-        # }
         models_response = {
             f"{args.model_1}": models_response_values[0],
             f"{args.model_2}": models_response_values[1],
@@ -207,7 +163,7 @@ if __name__ == "__main__":
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         models_str = "_".join([m.replace("/", "_") for m in model_list if m])
         cot_suffix = "_cot" if args.cot else ""
-        base_name = f"gsm_result_cat_adversarial_{cot_suffix}_{models_str}_{timestamp}.json"
+        base_name = f"gsm_result_temp1_cat_adversarial_{cot_suffix}_{models_str}_{timestamp}.json"
         return base_name
     
     # 출력 디렉토리 생성

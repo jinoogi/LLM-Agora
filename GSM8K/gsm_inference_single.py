@@ -14,11 +14,6 @@ from urllib3 import response
 def args_parse():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_1", type=str)
-    parser.add_argument(
-        "--API_KEY",
-        type=str,
-        help="your OpenAI API key to use gpt-3.5-turbo"
-    )
     parser.add_argument("--round", default=2, type=int)
     parser.add_argument(
         "--cot",
@@ -65,7 +60,6 @@ def read_jsonl(path: str):
 
 if __name__ == "__main__":
     args = args_parse()
-    # openai.api_key = args.API_KEY
     model_list = [args.model_1]
 
     prompt_dict, endpoint_dict = load_json("src/prompt_template.json", "src/inference_endpoint.json")
@@ -76,7 +70,7 @@ if __name__ == "__main__":
         payload = {
             "prompt": formatted_prompt,
             "max_tokens": 512,
-            "temperature": 0.2,
+            "temperature": 1,
             "repetition_penalty": 1.1,
             "enable_thinking": False
         }
@@ -169,7 +163,7 @@ if __name__ == "__main__":
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         models_str = "_".join([m.replace("/", "_") for m in model_list if m])
         cot_suffix = "_cot" if args.cot else ""
-        base_name = f"gsm_result_single{cot_suffix}_{models_str}_{timestamp}.json"
+        base_name = f"gsm_result_temp1_single{cot_suffix}_{models_str}_{timestamp}.json"
         return base_name
     
     # 출력 디렉토리 생성
