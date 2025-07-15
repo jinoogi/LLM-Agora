@@ -1,3 +1,4 @@
+import enum
 import requests
 # import openai
 import json
@@ -8,6 +9,8 @@ from tqdm import tqdm
 import argparse
 import os
 from datetime import datetime
+
+from urllib3 import response
 
 def args_parse():
     parser = argparse.ArgumentParser()
@@ -153,11 +156,14 @@ if __name__ == "__main__":
 
         message = []
 
+        models_response_values = [[],[],[]]
+
         # Debate
         for debate in range(rounds+1):
-
-            print("---------------------------",debate,"번째 debate---------------------------")    
             # Refer to the summarized previous response
+            if debate == 0:
+                for i in range(len(agent_contexts)):
+                    agent_contexts[i].append(prompt_formatting(agent_contexts[i][-1]["model"], agent_contexts[i][0]["content"], args.cot))
             if debate != 0:
                 message = []
                 message.append(summarize_message(agent_contexts, question, 2 * debate - 1))
@@ -165,22 +171,32 @@ if __name__ == "__main__":
                 for i in range(len(agent_contexts)):
                     agent_contexts[i].append(prompt_formatting(agent_contexts[i][-1]["model"], agent_contexts[i][0]["content"]+message[0], args.cot))
 
-            for agent_context in agent_contexts:
+            for i,agent_context in enumerate(agent_contexts):
                 # Generate new response based on summarized response
-                print("\n\tLLM인풋",agent_context[-1]["content"]) 
+                # print("\n\tagent_context:",agent_context[-1]["content"])
                 completion = generate_answer(agent_context[-1]["model"], agent_context[-1]["content"])
-                print("\tLLM아웃풋:",completion)
+                # print("\tcompletion:",completion)
                 agent_context.append(completion)
+
+                #모델 답변내역 추가
+                # print("이거추가:",completion["content"],"\n끝")
+                models_response_values[i].append(completion["content"])
 
 
 
         print(f"# Question No.{idx+1} debate is ended.")
 
+        # models_response = {
+        #     f"{args.model_1}": [agent_contexts[0][1]["content"], agent_contexts[0][3]["content"], agent_contexts[0][-1]["content"]],
+        #     f"{args.model_2}": [agent_contexts[1][1]["content"], agent_contexts[1][3]["content"], agent_contexts[1][-1]["content"]],
+        #     f"{args.model_3}": [agent_contexts[2][1]["content"], agent_contexts[2][3]["content"], agent_contexts[2][-1]["content"]]
+        # }
         models_response = {
-            f"{args.model_1}": [agent_contexts[0][1]["content"], agent_contexts[0][3]["content"], agent_contexts[0][-1]["content"]],
-            f"{args.model_2}": [agent_contexts[1][1]["content"], agent_contexts[1][3]["content"], agent_contexts[1][-1]["content"]],
-            f"{args.model_3}": [agent_contexts[2][1]["content"], agent_contexts[2][3]["content"], agent_contexts[2][-1]["content"]]
+            f"{args.model_1}": models_response_values[0],
+            f"{args.model_2}": models_response_values[1],
+            f"{args.model_3}": models_response_values[2]
         }
+
         response_summarization = [
             message[0]
         ]
@@ -191,7 +207,7 @@ if __name__ == "__main__":
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         models_str = "_".join([m.replace("/", "_") for m in model_list if m])
         cot_suffix = "_cot" if args.cot else ""
-        base_name = f"gsm_result{cot_suffix}_{models_str}_{timestamp}.json"
+        base_name = f"gsm_result_cat_adversarial_{cot_suffix}_{models_str}_{timestamp}.json"
         return base_name
     
     # 출력 디렉토리 생성
