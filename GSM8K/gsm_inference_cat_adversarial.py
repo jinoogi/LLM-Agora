@@ -68,7 +68,7 @@ if __name__ == "__main__":
         payload = {
             "prompt": formatted_prompt,
             "max_tokens": 512,
-            "temperature": 1,
+            "temperature": 0.25,
             "repetition_penalty": 1.1,
             "enable_thinking": False
         }
@@ -163,7 +163,7 @@ if __name__ == "__main__":
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         models_str = "_".join([m.replace("/", "_") for m in model_list if m])
         cot_suffix = "_cot" if args.cot else ""
-        base_name = f"gsm_result_temp1_cat_adversarial_{cot_suffix}_{models_str}_{timestamp}.json"
+        base_name = f"gsm_result_temp0.25_cat_adversarial_{cot_suffix}_{models_str}_{timestamp}.json"
         return base_name
     
     # 출력 디렉토리 생성

@@ -77,9 +77,26 @@ def main():
                 all_results.append(res)
         except Exception as e:
             print(f"[오류] {path}: {e}")
-    with open("/root/LLM-Agora/GSM8K/score_output", 'w') as f:
-        json.dump(all_results, f, indent=2, ensure_ascii=False)
+    # with open("/root/LLM-Agora/GSM8K/score_output", 'w') as f:
+    #     json.dump(all_results, f, indent=2, ensure_ascii=False)
+
+        # 1. 먼저 JSON을 들여쓰기가 적용된 문자열로 변환합니다.
+    output_string = json.dumps(all_results, indent=2, ensure_ascii=False)
+
+    # 2. 정규식을 사용해 여러 줄로 나뉜 숫자 리스트를 한 줄로 합칩니다.
+    #    ("qwen_A" 와 같은 키) : [ ... ] 형태의 패턴을 명시적으로 찾아 수정합니다.
+    compact_list_string = re.sub(
+        r'("qwen_[ABC]"): \[\s*(.*?)\s*\]',  # "qwen_A/B/C" 키를 명시적으로 찾습니다.
+        lambda m: f"{m.group(1)}: [{', '.join(''.join(m.group(2).split()).split(','))}]",
+        output_string,
+        flags=re.DOTALL
+    )
+    
+    # 3. 최종적으로 수정된 문자열을 파일에 씁니다.
+    with open("/root/LLM-Agora/GSM8K/score_output", 'w', encoding='utf-8') as f:
+        f.write(compact_list_string)
     print("모든 채점 결과가 /root/LLM-Agora/GSM8K/score_output에 저장되었습니다!")
 
 if __name__ == "__main__":
     main() 
+

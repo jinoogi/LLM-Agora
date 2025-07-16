@@ -1,1502 +1,702 @@
 [
   {
-    "file": "gsm_result_cat_adversarial__qwen_A_qwen_B_qwen_C_20250713_144501.json",
+    "file": "gsm_result_temp0.25_cat_adversarial__qwen_A_qwen_B_qwen_C_20250716_032808.json",
     "accuracy": {
-      "qwen_A": [
-        0.733,
-        0.733,
-        0.6
-      ],
-      "qwen_B": [
-        0.767,
-        0.7,
-        0.667
-      ],
-      "qwen_C": [
-        0.8,
-        0.767,
-        0.633
-      ]
+      "qwen_A": [0.467, 0.633, 0.667],
+      "qwen_B": [0.5, 0.6, 0.533],
+      "qwen_C": [0.5, 0.6, 0.667]
     }
   },
   {
-    "file": "gsm_result_cat_adversarial__qwen_A_qwen_B_qwen_C_20250713_144538.json",
+    "file": "gsm_result_temp0.25_cat_adversarial__qwen_A_qwen_B_qwen_C_20250716_032811.json",
     "accuracy": {
-      "qwen_A": [
-        0.767,
-        0.7,
-        0.633
-      ],
-      "qwen_B": [
-        0.767,
-        0.7,
-        0.533
-      ],
-      "qwen_C": [
-        0.667,
-        0.733,
-        0.5
-      ]
+      "qwen_A": [0.5, 0.567, 0.6],
+      "qwen_B": [0.467, 0.567, 0.467],
+      "qwen_C": [0.467, 0.633, 0.6]
     }
   },
   {
-    "file": "gsm_result_cat_adversarial__qwen_A_qwen_B_qwen_C_20250713_144600.json",
+    "file": "gsm_result_temp0.25_cat_adversarial__qwen_A_qwen_B_qwen_C_20250716_032832.json",
     "accuracy": {
-      "qwen_A": [
-        0.767,
-        0.867,
-        0.6
-      ],
-      "qwen_B": [
-        0.767,
-        0.767,
-        0.567
-      ],
-      "qwen_C": [
-        0.767,
-        0.7,
-        0.567
-      ]
+      "qwen_A": [0.467, 0.533, 0.667],
+      "qwen_B": [0.5, 0.567, 0.767],
+      "qwen_C": [0.533, 0.567, 0.667]
     }
   },
   {
-    "file": "gsm_result_cat_adversarial__qwen_A_qwen_B_qwen_C_20250713_144750.json",
+    "file": "gsm_result_temp0.25_cat_adversarial__qwen_A_qwen_B_qwen_C_20250716_032836.json",
     "accuracy": {
-      "qwen_A": [
-        0.7,
-        0.667,
-        0.433
-      ],
-      "qwen_B": [
-        0.667,
-        0.667,
-        0.433
-      ],
-      "qwen_C": [
-        0.767,
-        0.667,
-        0.4
-      ]
+      "qwen_A": [0.5, 0.567, 0.533],
+      "qwen_B": [0.533, 0.567, 0.5],
+      "qwen_C": [0.5, 0.6, 0.5]
     }
   },
   {
-    "file": "gsm_result_cat_adversarial__qwen_A_qwen_B_qwen_C_20250713_144755.json",
+    "file": "gsm_result_temp0.25_cat_adversarial__qwen_A_qwen_B_qwen_C_20250716_032859.json",
     "accuracy": {
-      "qwen_A": [
-        0.733,
-        0.733,
-        0.5
-      ],
-      "qwen_B": [
-        0.733,
-        0.733,
-        0.467
-      ],
-      "qwen_C": [
-        0.667,
-        0.7,
-        0.5
-      ]
+      "qwen_A": [0.533, 0.6, 0.633],
+      "qwen_B": [0.567, 0.633, 0.633],
+      "qwen_C": [0.633, 0.6, 0.633]
     }
   },
   {
-    "file": "gsm_result_qwen_A_qwen_B_qwen_C_20250713_144446.json",
+    "file": "gsm_result_temp0.25_qwen_A_qwen_B_qwen_C_20250716_032627.json",
     "accuracy": {
-      "qwen_A": [
-        0.8,
-        0.8,
-        0.567
-      ],
-      "qwen_B": [
-        0.8,
-        0.8,
-        0.567
-      ],
-      "qwen_C": [
-        0.8,
-        0.8,
-        0.567
-      ]
+      "qwen_A": [0.5, 0.533, 0.533],
+      "qwen_B": [0.467, 0.567, 0.5],
+      "qwen_C": [0.467, 0.5, 0.567]
     }
   },
   {
-    "file": "gsm_result_qwen_A_qwen_B_qwen_C_20250713_144656.json",
+    "file": "gsm_result_temp0.25_qwen_A_qwen_B_qwen_C_20250716_032820.json",
     "accuracy": {
-      "qwen_A": [
-        0.667,
-        0.667,
-        0.367
-      ],
-      "qwen_B": [
-        0.833,
-        0.7,
-        0.467
-      ],
-      "qwen_C": [
-        0.833,
-        0.7,
-        0.467
-      ]
+      "qwen_A": [0.5, 0.6, 0.433],
+      "qwen_B": [0.5, 0.567, 0.433],
+      "qwen_C": [0.467, 0.467, 0.4]
     }
   },
   {
-    "file": "gsm_result_qwen_A_qwen_B_qwen_C_20250713_144715.json",
+    "file": "gsm_result_temp0.25_qwen_A_qwen_B_qwen_C_20250716_032851.json",
     "accuracy": {
-      "qwen_A": [
-        0.833,
-        0.767,
-        0.567
-      ],
-      "qwen_B": [
-        0.767,
-        0.8,
-        0.533
-      ],
-      "qwen_C": [
-        0.833,
-        0.8,
-        0.567
-      ]
+      "qwen_A": [0.467, 0.6, 0.5],
+      "qwen_B": [0.467, 0.567, 0.567],
+      "qwen_C": [0.433, 0.633, 0.6]
     }
   },
   {
-    "file": "gsm_result_qwen_A_qwen_B_qwen_C_20250713_144722.json",
+    "file": "gsm_result_temp0.25_qwen_A_qwen_B_qwen_C_20250716_032910.json",
     "accuracy": {
-      "qwen_A": [
-        0.8,
-        0.833,
-        0.633
-      ],
-      "qwen_B": [
-        0.8,
-        0.8,
-        0.6
-      ],
-      "qwen_C": [
-        0.767,
-        0.7,
-        0.633
-      ]
+      "qwen_A": [0.567, 0.567, 0.667],
+      "qwen_B": [0.433, 0.6, 0.633],
+      "qwen_C": [0.533, 0.633, 0.7]
     }
   },
   {
-    "file": "gsm_result_qwen_A_qwen_B_qwen_C_20250714_065004.json",
+    "file": "gsm_result_temp0.25_qwen_A_qwen_B_qwen_C_20250716_032957.json",
     "accuracy": {
-      "qwen_A": [
-        0.767,
-        0.733,
-        0.6
-      ],
-      "qwen_B": [
-        0.833,
-        0.833,
-        0.6
-      ],
-      "qwen_C": [
-        0.8,
-        0.767,
-        0.633
-      ]
+      "qwen_A": [0.5, 0.7, 0.667],
+      "qwen_B": [0.433, 0.6, 0.6],
+      "qwen_C": [0.467, 0.667, 0.6]
     }
   },
   {
-    "file": "gsm_result_single_cat_adversarial_qwen_A_20250714_073711.json",
+    "file": "gsm_result_temp0.25_single_cat_adversarial_qwen_A_20250716_040745.json",
     "accuracy": {
-      "qwen_A": [
-        0.8,
-        0.667,
-        0.633
-      ]
+      "qwen_A": [0.6, 0.5, 0.433]
     }
   },
   {
-    "file": "gsm_result_single_cat_adversarial_qwen_A_20250714_073716.json",
+    "file": "gsm_result_temp0.25_single_cat_adversarial_qwen_A_20250716_040756.json",
     "accuracy": {
-      "qwen_A": [
-        0.667,
-        0.633,
-        0.567
-      ]
+      "qwen_A": [0.567, 0.533, 0.367]
     }
   },
   {
-    "file": "gsm_result_single_cat_adversarial_qwen_A_20250714_073732.json",
+    "file": "gsm_result_temp0.25_single_cat_adversarial_qwen_A_20250716_040825.json",
     "accuracy": {
-      "qwen_A": [
-        0.733,
-        0.667,
-        0.733
-      ]
+      "qwen_A": [0.533, 0.7, 0.733]
     }
   },
   {
-    "file": "gsm_result_single_cat_adversarial_qwen_A_20250714_073739.json",
+    "file": "gsm_result_temp0.25_single_cat_adversarial_qwen_A_20250716_040827.json",
     "accuracy": {
-      "qwen_A": [
-        0.7,
-        0.633,
-        0.5
-      ]
+      "qwen_A": [0.5, 0.567, 0.433]
     }
   },
   {
-    "file": "gsm_result_single_cat_adversarial_qwen_A_20250714_073808.json",
+    "file": "gsm_result_temp0.25_single_cat_adversarial_qwen_A_20250716_040837.json",
     "accuracy": {
-      "qwen_A": [
-        0.767,
-        0.7,
-        0.5
-      ]
+      "qwen_A": [0.533, 0.567, 0.467]
     }
   },
   {
-    "file": "gsm_result_single_qwen_A_20250714_073612.json",
+    "file": "gsm_result_temp0.25_single_qwen_A_20250716_040800.json",
     "accuracy": {
-      "qwen_A": [
-        0.533,
-        0.533,
-        0.4
-      ]
+      "qwen_A": [0.5, 0.433, 0.433]
     }
   },
   {
-    "file": "gsm_result_single_qwen_A_20250714_073633.json",
+    "file": "gsm_result_temp0.25_single_qwen_A_20250716_040813.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.533,
-        0.333
-      ]
-    }
-  },
-  {
-    "file": "gsm_result_single_qwen_A_20250714_073704.json",
-    "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.467,
-        0.333
-      ]
-    }
-  },
-  {
-    "file": "gsm_result_single_qwen_A_20250714_073712.json",
-    "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.4,
-        0.333
-      ]
-    }
-  },
-  {
-    "file": "gsm_result_single_qwen_A_20250714_073719.json",
-    "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.567,
-        0.4
-      ]
+      "qwen_A": [0.5, 0.533, 0.4]
     }
   },
   {
     "file": "gsm_result_temp0_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_055550.json",
     "accuracy": {
-      "qwen_A": [
-        0.567,
-        0.6,
-        0.567
-      ],
-      "qwen_B": [
-        0.533,
-        0.567,
-        0.567
-      ],
-      "qwen_C": [
-        0.533,
-        0.6,
-        0.533
-      ]
+      "qwen_A": [0.567, 0.6, 0.567],
+      "qwen_B": [0.533, 0.567, 0.567],
+      "qwen_C": [0.533, 0.6, 0.533]
     }
   },
   {
     "file": "gsm_result_temp0_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_055623.json",
     "accuracy": {
-      "qwen_A": [
-        0.6,
-        0.633,
-        0.467
-      ],
-      "qwen_B": [
-        0.567,
-        0.633,
-        0.467
-      ],
-      "qwen_C": [
-        0.567,
-        0.633,
-        0.5
-      ]
+      "qwen_A": [0.6, 0.633, 0.467],
+      "qwen_B": [0.567, 0.633, 0.467],
+      "qwen_C": [0.567, 0.633, 0.5]
     }
   },
   {
     "file": "gsm_result_temp0_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_055626.json",
     "accuracy": {
-      "qwen_A": [
-        0.567,
-        0.6,
-        0.5
-      ],
-      "qwen_B": [
-        0.567,
-        0.533,
-        0.5
-      ],
-      "qwen_C": [
-        0.467,
-        0.533,
-        0.5
-      ]
+      "qwen_A": [0.567, 0.6, 0.5],
+      "qwen_B": [0.567, 0.533, 0.5],
+      "qwen_C": [0.467, 0.533, 0.5]
     }
   },
   {
     "file": "gsm_result_temp0_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_055635.json",
     "accuracy": {
-      "qwen_A": [
-        0.6,
-        0.533,
-        0.6
-      ],
-      "qwen_B": [
-        0.533,
-        0.533,
-        0.6
-      ],
-      "qwen_C": [
-        0.533,
-        0.533,
-        0.567
-      ]
+      "qwen_A": [0.6, 0.533, 0.6],
+      "qwen_B": [0.533, 0.533, 0.6],
+      "qwen_C": [0.533, 0.533, 0.567]
     }
   },
   {
     "file": "gsm_result_temp0_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_055709.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.633,
-        0.433
-      ],
-      "qwen_B": [
-        0.533,
-        0.633,
-        0.467
-      ],
-      "qwen_C": [
-        0.5,
-        0.667,
-        0.467
-      ]
+      "qwen_A": [0.5, 0.633, 0.433],
+      "qwen_B": [0.533, 0.633, 0.467],
+      "qwen_C": [0.5, 0.667, 0.467]
     }
   },
   {
     "file": "gsm_result_temp0_qwen_A_qwen_B_qwen_C_20250715_055728.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.533,
-        0.467
-      ],
-      "qwen_B": [
-        0.467,
-        0.5,
-        0.467
-      ],
-      "qwen_C": [
-        0.467,
-        0.6,
-        0.467
-      ]
+      "qwen_A": [0.467, 0.533, 0.467],
+      "qwen_B": [0.467, 0.5, 0.467],
+      "qwen_C": [0.467, 0.6, 0.467]
     }
   },
   {
     "file": "gsm_result_temp0_qwen_A_qwen_B_qwen_C_20250715_055730.json",
     "accuracy": {
-      "qwen_A": [
-        0.533,
-        0.5,
-        0.533
-      ],
-      "qwen_B": [
-        0.5,
-        0.533,
-        0.567
-      ],
-      "qwen_C": [
-        0.5,
-        0.533,
-        0.6
-      ]
+      "qwen_A": [0.533, 0.5, 0.533],
+      "qwen_B": [0.5, 0.533, 0.567],
+      "qwen_C": [0.5, 0.533, 0.6]
     }
   },
   {
     "file": "gsm_result_temp0_qwen_A_qwen_B_qwen_C_20250715_055742.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.567,
-        0.433
-      ],
-      "qwen_B": [
-        0.467,
-        0.633,
-        0.4
-      ],
-      "qwen_C": [
-        0.467,
-        0.633,
-        0.367
-      ]
+      "qwen_A": [0.467, 0.567, 0.433],
+      "qwen_B": [0.467, 0.633, 0.4],
+      "qwen_C": [0.467, 0.633, 0.367]
     }
   },
   {
     "file": "gsm_result_temp0_qwen_A_qwen_B_qwen_C_20250715_055802.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.567,
-        0.433
-      ],
-      "qwen_B": [
-        0.467,
-        0.567,
-        0.5
-      ],
-      "qwen_C": [
-        0.467,
-        0.567,
-        0.5
-      ]
+      "qwen_A": [0.467, 0.567, 0.433],
+      "qwen_B": [0.467, 0.567, 0.5],
+      "qwen_C": [0.467, 0.567, 0.5]
     }
   },
   {
     "file": "gsm_result_temp0_qwen_A_qwen_B_qwen_C_20250715_055809.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.433,
-        0.467
-      ],
-      "qwen_B": [
-        0.4,
-        0.467,
-        0.433
-      ],
-      "qwen_C": [
-        0.467,
-        0.5,
-        0.433
-      ]
+      "qwen_A": [0.467, 0.433, 0.467],
+      "qwen_B": [0.4, 0.467, 0.433],
+      "qwen_C": [0.467, 0.5, 0.433]
     }
   },
   {
     "file": "gsm_result_temp0.5_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_051008.json",
     "accuracy": {
-      "qwen_A": [
-        0.533,
-        0.633,
-        0.667
-      ],
-      "qwen_B": [
-        0.533,
-        0.733,
-        0.667
-      ],
-      "qwen_C": [
-        0.567,
-        0.633,
-        0.6
-      ]
+      "qwen_A": [0.533, 0.633, 0.667],
+      "qwen_B": [0.533, 0.733, 0.667],
+      "qwen_C": [0.567, 0.633, 0.6]
     }
   },
   {
     "file": "gsm_result_temp0.5_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_051010.json",
     "accuracy": {
-      "qwen_A": [
-        0.633,
-        0.733,
-        0.633
-      ],
-      "qwen_B": [
-        0.533,
-        0.6,
-        0.633
-      ],
-      "qwen_C": [
-        0.533,
-        0.7,
-        0.667
-      ]
+      "qwen_A": [0.633, 0.733, 0.633],
+      "qwen_B": [0.533, 0.6, 0.633],
+      "qwen_C": [0.533, 0.7, 0.667]
     }
   },
   {
     "file": "gsm_result_temp0.5_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_051109.json",
     "accuracy": {
-      "qwen_A": [
-        0.633,
-        0.633,
-        0.433
-      ],
-      "qwen_B": [
-        0.5,
-        0.667,
-        0.467
-      ],
-      "qwen_C": [
-        0.5,
-        0.6,
-        0.467
-      ]
+      "qwen_A": [0.633, 0.633, 0.433],
+      "qwen_B": [0.5, 0.667, 0.467],
+      "qwen_C": [0.5, 0.6, 0.467]
     }
   },
   {
     "file": "gsm_result_temp0.5_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_051207.json",
     "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.667,
-        0.633
-      ],
-      "qwen_B": [
-        0.567,
-        0.667,
-        0.533
-      ],
-      "qwen_C": [
-        0.567,
-        0.633,
-        0.6
-      ]
+      "qwen_A": [0.433, 0.667, 0.633],
+      "qwen_B": [0.567, 0.667, 0.533],
+      "qwen_C": [0.567, 0.633, 0.6]
     }
   },
   {
     "file": "gsm_result_temp0.5_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_051217.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.633,
-        0.633
-      ],
-      "qwen_B": [
-        0.6,
-        0.733,
-        0.633
-      ],
-      "qwen_C": [
-        0.567,
-        0.667,
-        0.567
-      ]
+      "qwen_A": [0.467, 0.633, 0.633],
+      "qwen_B": [0.6, 0.733, 0.633],
+      "qwen_C": [0.567, 0.667, 0.567]
     }
   },
   {
     "file": "gsm_result_temp0.5_qwen_A_qwen_B_qwen_C_20250715_045756.json",
     "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.6,
-        0.467
-      ],
-      "qwen_B": [
-        0.367,
-        0.733,
-        0.467
-      ],
-      "qwen_C": [
-        0.567,
-        0.6,
-        0.467
-      ]
+      "qwen_A": [0.433, 0.6, 0.467],
+      "qwen_B": [0.367, 0.733, 0.467],
+      "qwen_C": [0.567, 0.6, 0.467]
     }
   },
   {
     "file": "gsm_result_temp0.5_qwen_A_qwen_B_qwen_C_20250715_050456.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.567,
-        0.5
-      ],
-      "qwen_B": [
-        0.4,
-        0.6,
-        0.4
-      ],
-      "qwen_C": [
-        0.467,
-        0.6,
-        0.367
-      ]
+      "qwen_A": [0.467, 0.567, 0.5],
+      "qwen_B": [0.4, 0.6, 0.4],
+      "qwen_C": [0.467, 0.6, 0.367]
     }
   },
   {
     "file": "gsm_result_temp0.5_qwen_A_qwen_B_qwen_C_20250715_050656.json",
     "accuracy": {
-      "qwen_A": [
-        0.4,
-        0.567,
-        0.5
-      ],
-      "qwen_B": [
-        0.5,
-        0.5,
-        0.633
-      ],
-      "qwen_C": [
-        0.4,
-        0.533,
-        0.633
-      ]
+      "qwen_A": [0.4, 0.567, 0.5],
+      "qwen_B": [0.5, 0.5, 0.633],
+      "qwen_C": [0.4, 0.533, 0.633]
     }
   },
   {
     "file": "gsm_result_temp0.5_qwen_A_qwen_B_qwen_C_20250715_050910.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.567,
-        0.5
-      ],
-      "qwen_B": [
-        0.433,
-        0.533,
-        0.5
-      ],
-      "qwen_C": [
-        0.367,
-        0.633,
-        0.433
-      ]
+      "qwen_A": [0.5, 0.567, 0.5],
+      "qwen_B": [0.433, 0.533, 0.5],
+      "qwen_C": [0.367, 0.633, 0.433]
     }
   },
   {
     "file": "gsm_result_temp0.5_qwen_A_qwen_B_qwen_C_20250715_050933.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.567,
-        0.6
-      ],
-      "qwen_B": [
-        0.5,
-        0.5,
-        0.567
-      ],
-      "qwen_C": [
-        0.567,
-        0.567,
-        0.567
-      ]
+      "qwen_A": [0.5, 0.567, 0.6],
+      "qwen_B": [0.5, 0.5, 0.567],
+      "qwen_C": [0.567, 0.567, 0.567]
     }
   },
   {
     "file": "gsm_result_temp0.75_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_063624.json",
     "accuracy": {
-      "qwen_A": [
-        0.533,
-        0.533,
-        0.633
-      ],
-      "qwen_B": [
-        0.333,
-        0.633,
-        0.633
-      ],
-      "qwen_C": [
-        0.6,
-        0.7,
-        0.633
-      ]
+      "qwen_A": [0.533, 0.533, 0.633],
+      "qwen_B": [0.333, 0.633, 0.633],
+      "qwen_C": [0.6, 0.7, 0.633]
     }
   },
   {
     "file": "gsm_result_temp0.75_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_063729.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.633,
-        0.7
-      ],
-      "qwen_B": [
-        0.533,
-        0.533,
-        0.633
-      ],
-      "qwen_C": [
-        0.533,
-        0.5,
-        0.6
-      ]
+      "qwen_A": [0.467, 0.633, 0.7],
+      "qwen_B": [0.533, 0.533, 0.633],
+      "qwen_C": [0.533, 0.5, 0.6]
     }
   },
   {
     "file": "gsm_result_temp0.75_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_063740.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.7,
-        0.567
-      ],
-      "qwen_B": [
-        0.533,
-        0.567,
-        0.6
-      ],
-      "qwen_C": [
-        0.533,
-        0.633,
-        0.6
-      ]
+      "qwen_A": [0.467, 0.7, 0.567],
+      "qwen_B": [0.533, 0.567, 0.6],
+      "qwen_C": [0.533, 0.633, 0.6]
     }
   },
   {
     "file": "gsm_result_temp0.75_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_063809.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.7,
-        0.567
-      ],
-      "qwen_B": [
-        0.567,
-        0.767,
-        0.7
-      ],
-      "qwen_C": [
-        0.467,
-        0.767,
-        0.533
-      ]
+      "qwen_A": [0.5, 0.7, 0.567],
+      "qwen_B": [0.567, 0.767, 0.7],
+      "qwen_C": [0.467, 0.767, 0.533]
     }
   },
   {
     "file": "gsm_result_temp0.75_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_063837.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.633,
-        0.5
-      ],
-      "qwen_B": [
-        0.5,
-        0.6,
-        0.4
-      ],
-      "qwen_C": [
-        0.433,
-        0.567,
-        0.6
-      ]
+      "qwen_A": [0.5, 0.633, 0.5],
+      "qwen_B": [0.5, 0.6, 0.4],
+      "qwen_C": [0.433, 0.567, 0.6]
     }
   },
   {
     "file": "gsm_result_temp0.75_qwen_A_qwen_B_qwen_C_20250715_063512.json",
     "accuracy": {
-      "qwen_A": [
-        0.4,
-        0.6,
-        0.5
-      ],
-      "qwen_B": [
-        0.333,
-        0.5,
-        0.533
-      ],
-      "qwen_C": [
-        0.4,
-        0.6,
-        0.6
-      ]
+      "qwen_A": [0.4, 0.6, 0.5],
+      "qwen_B": [0.333, 0.5, 0.533],
+      "qwen_C": [0.4, 0.6, 0.6]
     }
   },
   {
     "file": "gsm_result_temp0.75_qwen_A_qwen_B_qwen_C_20250715_063557.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.633,
-        0.433
-      ],
-      "qwen_B": [
-        0.433,
-        0.4,
-        0.5
-      ],
-      "qwen_C": [
-        0.367,
-        0.567,
-        0.433
-      ]
+      "qwen_A": [0.5, 0.633, 0.433],
+      "qwen_B": [0.433, 0.4, 0.5],
+      "qwen_C": [0.367, 0.567, 0.433]
     }
   },
   {
     "file": "gsm_result_temp0.75_qwen_A_qwen_B_qwen_C_20250715_063636.json",
     "accuracy": {
-      "qwen_A": [
-        0.533,
-        0.467,
-        0.7
-      ],
-      "qwen_B": [
-        0.533,
-        0.467,
-        0.6
-      ],
-      "qwen_C": [
-        0.367,
-        0.367,
-        0.533
-      ]
+      "qwen_A": [0.533, 0.467, 0.7],
+      "qwen_B": [0.533, 0.467, 0.6],
+      "qwen_C": [0.367, 0.367, 0.533]
     }
   },
   {
     "file": "gsm_result_temp0.75_qwen_A_qwen_B_qwen_C_20250715_063643.json",
     "accuracy": {
-      "qwen_A": [
-        0.4,
-        0.6,
-        0.5
-      ],
-      "qwen_B": [
-        0.367,
-        0.6,
-        0.5
-      ],
-      "qwen_C": [
-        0.6,
-        0.533,
-        0.567
-      ]
+      "qwen_A": [0.4, 0.6, 0.5],
+      "qwen_B": [0.367, 0.6, 0.5],
+      "qwen_C": [0.6, 0.533, 0.567]
     }
   },
   {
     "file": "gsm_result_temp0.75_qwen_A_qwen_B_qwen_C_20250715_063701.json",
     "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.7,
-        0.5
-      ],
-      "qwen_B": [
-        0.5,
-        0.733,
-        0.567
-      ],
-      "qwen_C": [
-        0.5,
-        0.633,
-        0.5
-      ]
+      "qwen_A": [0.433, 0.7, 0.5],
+      "qwen_B": [0.5, 0.733, 0.567],
+      "qwen_C": [0.5, 0.633, 0.5]
     }
   },
   {
     "file": "gsm_result_temp1_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_080518.json",
     "accuracy": {
-      "qwen_A": [
-        0.4,
-        0.667,
-        0.533
-      ],
-      "qwen_B": [
-        0.4,
-        0.6,
-        0.5
-      ],
-      "qwen_C": [
-        0.567,
-        0.7,
-        0.533
-      ]
+      "qwen_A": [0.4, 0.667, 0.533],
+      "qwen_B": [0.4, 0.6, 0.5],
+      "qwen_C": [0.567, 0.7, 0.533]
     }
   },
   {
     "file": "gsm_result_temp1_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_080641.json",
     "accuracy": {
-      "qwen_A": [
-        0.567,
-        0.6,
-        0.467
-      ],
-      "qwen_B": [
-        0.6,
-        0.667,
-        0.567
-      ],
-      "qwen_C": [
-        0.433,
-        0.7,
-        0.4
-      ]
+      "qwen_A": [0.567, 0.6, 0.467],
+      "qwen_B": [0.6, 0.667, 0.567],
+      "qwen_C": [0.433, 0.7, 0.4]
     }
   },
   {
     "file": "gsm_result_temp1_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_080710.json",
     "accuracy": {
-      "qwen_A": [
-        0.567,
-        0.567,
-        0.367
-      ],
-      "qwen_B": [
-        0.467,
-        0.467,
-        0.633
-      ],
-      "qwen_C": [
-        0.5,
-        0.567,
-        0.533
-      ]
+      "qwen_A": [0.567, 0.567, 0.367],
+      "qwen_B": [0.467, 0.467, 0.633],
+      "qwen_C": [0.5, 0.567, 0.533]
     }
   },
   {
     "file": "gsm_result_temp1_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_080712.json",
     "accuracy": {
-      "qwen_A": [
-        0.4,
-        0.733,
-        0.567
-      ],
-      "qwen_B": [
-        0.5,
-        0.8,
-        0.567
-      ],
-      "qwen_C": [
-        0.433,
-        0.767,
-        0.367
-      ]
+      "qwen_A": [0.4, 0.733, 0.567],
+      "qwen_B": [0.5, 0.8, 0.567],
+      "qwen_C": [0.433, 0.767, 0.367]
     }
   },
   {
     "file": "gsm_result_temp1_cat_adversarial__qwen_A_qwen_B_qwen_C_20250715_080724.json",
     "accuracy": {
-      "qwen_A": [
-        0.533,
-        0.533,
-        0.533
-      ],
-      "qwen_B": [
-        0.433,
-        0.7,
-        0.567
-      ],
-      "qwen_C": [
-        0.467,
-        0.6,
-        0.567
-      ]
+      "qwen_A": [0.533, 0.533, 0.533],
+      "qwen_B": [0.433, 0.7, 0.567],
+      "qwen_C": [0.467, 0.6, 0.567]
     }
   },
   {
     "file": "gsm_result_temp1_qwen_A_qwen_B_qwen_C_20250715_080508.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.6,
-        0.667
-      ],
-      "qwen_B": [
-        0.467,
-        0.633,
-        0.7
-      ],
-      "qwen_C": [
-        0.467,
-        0.533,
-        0.6
-      ]
+      "qwen_A": [0.5, 0.6, 0.667],
+      "qwen_B": [0.467, 0.633, 0.7],
+      "qwen_C": [0.467, 0.533, 0.6]
     }
   },
   {
     "file": "gsm_result_temp1_qwen_A_qwen_B_qwen_C_20250715_080534.json",
     "accuracy": {
-      "qwen_A": [
-        0.333,
-        0.7,
-        0.567
-      ],
-      "qwen_B": [
-        0.5,
-        0.767,
-        0.633
-      ],
-      "qwen_C": [
-        0.433,
-        0.633,
-        0.6
-      ]
+      "qwen_A": [0.333, 0.7, 0.567],
+      "qwen_B": [0.5, 0.767, 0.633],
+      "qwen_C": [0.433, 0.633, 0.6]
     }
   },
   {
     "file": "gsm_result_temp1_qwen_A_qwen_B_qwen_C_20250715_080548.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.5,
-        0.5
-      ],
-      "qwen_B": [
-        0.533,
-        0.533,
-        0.567
-      ],
-      "qwen_C": [
-        0.5,
-        0.667,
-        0.5
-      ]
+      "qwen_A": [0.5, 0.5, 0.5],
+      "qwen_B": [0.533, 0.533, 0.567],
+      "qwen_C": [0.5, 0.667, 0.5]
     }
   },
   {
     "file": "gsm_result_temp1_qwen_A_qwen_B_qwen_C_20250715_080622.json",
     "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.633,
-        0.567
-      ],
-      "qwen_B": [
-        0.4,
-        0.6,
-        0.5
-      ],
-      "qwen_C": [
-        0.5,
-        0.733,
-        0.533
-      ]
+      "qwen_A": [0.433, 0.633, 0.567],
+      "qwen_B": [0.4, 0.6, 0.5],
+      "qwen_C": [0.5, 0.733, 0.533]
     }
   },
   {
     "file": "gsm_result_temp1_qwen_A_qwen_B_qwen_C_20250715_080659.json",
     "accuracy": {
-      "qwen_A": [
-        0.367,
-        0.733,
-        0.433
-      ],
-      "qwen_B": [
-        0.6,
-        0.733,
-        0.5
-      ],
-      "qwen_C": [
-        0.433,
-        0.6,
-        0.467
-      ]
+      "qwen_A": [0.367, 0.733, 0.433],
+      "qwen_B": [0.6, 0.733, 0.5],
+      "qwen_C": [0.433, 0.6, 0.467]
     }
   },
   {
     "file": "gsm_result_temp0_single_cat_adversarial_qwen_A_20250715_083336.json",
     "accuracy": {
-      "qwen_A": [
-        0.567,
-        0.567,
-        0.567
-      ]
+      "qwen_A": [0.567, 0.567, 0.567]
     }
   },
   {
     "file": "gsm_result_temp0_single_cat_adversarial_qwen_A_20250715_083348.json",
     "accuracy": {
-      "qwen_A": [
-        0.6,
-        0.533,
-        0.567
-      ]
+      "qwen_A": [0.6, 0.533, 0.567]
     }
   },
   {
     "file": "gsm_result_temp0_single_cat_adversarial_qwen_A_20250715_083406.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.567,
-        0.567
-      ]
+      "qwen_A": [0.5, 0.567, 0.567]
     }
   },
   {
     "file": "gsm_result_temp0_single_cat_adversarial_qwen_A_20250715_083407.json",
     "accuracy": {
-      "qwen_A": [
-        0.533,
-        0.667,
-        0.533
-      ]
+      "qwen_A": [0.533, 0.667, 0.533]
     }
   },
   {
     "file": "gsm_result_temp0_single_cat_adversarial_qwen_A_20250715_083415.json",
     "accuracy": {
-      "qwen_A": [
-        0.6,
-        0.567,
-        0.467
-      ]
+      "qwen_A": [0.6, 0.567, 0.467]
     }
   },
   {
     "file": "gsm_result_temp0_single_qwen_A_20250715_083337.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.567,
-        0.5
-      ]
+      "qwen_A": [0.5, 0.567, 0.5]
     }
   },
   {
     "file": "gsm_result_temp0_single_qwen_A_20250715_083348.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.533,
-        0.4
-      ]
+      "qwen_A": [0.467, 0.533, 0.4]
     }
   },
   {
     "file": "gsm_result_temp0_single_qwen_A_20250715_083351_v1.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.567,
-        0.4
-      ]
+      "qwen_A": [0.467, 0.567, 0.4]
     }
   },
   {
     "file": "gsm_result_temp0_single_qwen_A_20250715_083351.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.6,
-        0.533
-      ]
+      "qwen_A": [0.467, 0.6, 0.533]
     }
   },
   {
     "file": "gsm_result_temp0_single_qwen_A_20250715_083358.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.533,
-        0.367
-      ]
+      "qwen_A": [0.467, 0.533, 0.367]
     }
   },
   {
     "file": "gsm_result_temp0.5_single_cat_adversarial_qwen_A_20250715_085411.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.7,
-        0.5
-      ]
+      "qwen_A": [0.467, 0.7, 0.5]
     }
   },
   {
     "file": "gsm_result_temp0.5_single_cat_adversarial_qwen_A_20250715_085413.json",
     "accuracy": {
-      "qwen_A": [
-        0.533,
-        0.633,
-        0.567
-      ]
+      "qwen_A": [0.533, 0.633, 0.567]
     }
   },
   {
     "file": "gsm_result_temp0.5_single_cat_adversarial_qwen_A_20250715_085424.json",
     "accuracy": {
-      "qwen_A": [
-        0.567,
-        0.6,
-        0.533
-      ]
+      "qwen_A": [0.567, 0.6, 0.533]
     }
   },
   {
     "file": "gsm_result_temp0.5_single_cat_adversarial_qwen_A_20250715_085454.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.733,
-        0.633
-      ]
+      "qwen_A": [0.5, 0.733, 0.633]
     }
   },
   {
     "file": "gsm_result_temp0.5_single_cat_adversarial_qwen_A_20250715_085456.json",
     "accuracy": {
-      "qwen_A": [
-        0.567,
-        0.567,
-        0.4
-      ]
+      "qwen_A": [0.567, 0.567, 0.4]
     }
   },
   {
     "file": "gsm_result_temp0.5_single_qwen_A_20250715_085412.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.5,
-        0.4
-      ]
+      "qwen_A": [0.5, 0.5, 0.4]
     }
   },
   {
     "file": "gsm_result_temp0.5_single_qwen_A_20250715_085436.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.567,
-        0.4
-      ]
+      "qwen_A": [0.467, 0.567, 0.4]
     }
   },
   {
     "file": "gsm_result_temp0.5_single_qwen_A_20250715_085437.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.633,
-        0.367
-      ]
+      "qwen_A": [0.467, 0.633, 0.367]
     }
   },
   {
     "file": "gsm_result_temp0.5_single_qwen_A_20250715_085438.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.467,
-        0.6
-      ]
+      "qwen_A": [0.5, 0.467, 0.6]
     }
   },
   {
     "file": "gsm_result_temp0.5_single_qwen_A_20250715_085441.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.667,
-        0.4
-      ]
+      "qwen_A": [0.5, 0.667, 0.4]
     }
   },
   {
     "file": "gsm_result_temp0.75_single_cat_adversarial_qwen_A_20250715_091230.json",
     "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.7,
-        0.533
-      ]
+      "qwen_A": [0.433, 0.7, 0.533]
     }
   },
   {
     "file": "gsm_result_temp0.75_single_cat_adversarial_qwen_A_20250715_091257.json",
     "accuracy": {
-      "qwen_A": [
-        0.667,
-        0.767,
-        0.567
-      ]
+      "qwen_A": [0.667, 0.767, 0.567]
     }
   },
   {
     "file": "gsm_result_temp0.75_single_cat_adversarial_qwen_A_20250715_091313_v1.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.6,
-        0.6
-      ]
+      "qwen_A": [0.5, 0.6, 0.6]
     }
   },
   {
     "file": "gsm_result_temp0.75_single_cat_adversarial_qwen_A_20250715_091313.json",
     "accuracy": {
-      "qwen_A": [
-        0.533,
-        0.567,
-        0.567
-      ]
+      "qwen_A": [0.533, 0.567, 0.567]
     }
   },
   {
     "file": "gsm_result_temp0.75_single_cat_adversarial_qwen_A_20250715_091329.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.567,
-        0.433
-      ]
+      "qwen_A": [0.5, 0.567, 0.433]
     }
   },
   {
     "file": "gsm_result_temp0.75_single_qwen_A_20250715_091220.json",
     "accuracy": {
-      "qwen_A": [
-        0.533,
-        0.467,
-        0.467
-      ]
+      "qwen_A": [0.533, 0.467, 0.467]
     }
   },
   {
     "file": "gsm_result_temp0.75_single_qwen_A_20250715_091221.json",
     "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.567,
-        0.333
-      ]
+      "qwen_A": [0.433, 0.567, 0.333]
     }
   },
   {
     "file": "gsm_result_temp0.75_single_qwen_A_20250715_091226.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.533,
-        0.5
-      ]
+      "qwen_A": [0.467, 0.533, 0.5]
     }
   },
   {
     "file": "gsm_result_temp0.75_single_qwen_A_20250715_091257.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.5,
-        0.533
-      ]
+      "qwen_A": [0.5, 0.5, 0.533]
     }
   },
   {
     "file": "gsm_result_temp0.75_single_qwen_A_20250715_091329.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.6,
-        0.433
-      ]
+      "qwen_A": [0.467, 0.6, 0.433]
     }
   },
   {
     "file": "gsm_result_temp1_single_cat_adversarial_qwen_A_20250715_093234.json",
     "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.767,
-        0.533
-      ]
+      "qwen_A": [0.433, 0.767, 0.533]
     }
   },
   {
     "file": "gsm_result_temp1_single_cat_adversarial_qwen_A_20250715_093240.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.7,
-        0.8
-      ]
+      "qwen_A": [0.5, 0.7, 0.8]
     }
   },
   {
     "file": "gsm_result_temp1_single_cat_adversarial_qwen_A_20250715_093251.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.7,
-        0.633
-      ]
+      "qwen_A": [0.467, 0.7, 0.633]
     }
   },
   {
     "file": "gsm_result_temp1_single_cat_adversarial_qwen_A_20250715_093308.json",
     "accuracy": {
-      "qwen_A": [
-        0.367,
-        0.633,
-        0.467
-      ]
+      "qwen_A": [0.367, 0.633, 0.467]
     }
   },
   {
     "file": "gsm_result_temp1_single_cat_adversarial_qwen_A_20250715_093313.json",
     "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.6,
-        0.733
-      ]
+      "qwen_A": [0.433, 0.6, 0.733]
     }
   },
   {
     "file": "gsm_result_temp1_single_qwen_A_20250715_093237.json",
     "accuracy": {
-      "qwen_A": [
-        0.5,
-        0.6,
-        0.633
-      ]
+      "qwen_A": [0.5, 0.6, 0.633]
     }
   },
   {
     "file": "gsm_result_temp1_single_qwen_A_20250715_093239.json",
     "accuracy": {
-      "qwen_A": [
-        0.467,
-        0.567,
-        0.467
-      ]
+      "qwen_A": [0.467, 0.567, 0.467]
     }
   },
   {
     "file": "gsm_result_temp1_single_qwen_A_20250715_093240.json",
     "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.7,
-        0.7
-      ]
+      "qwen_A": [0.433, 0.7, 0.7]
     }
   },
   {
     "file": "gsm_result_temp1_single_qwen_A_20250715_093250_v1.json",
     "accuracy": {
-      "qwen_A": [
-        0.367,
-        0.5,
-        0.567
-      ]
+      "qwen_A": [0.367, 0.5, 0.567]
     }
   },
   {
     "file": "gsm_result_temp1_single_qwen_A_20250715_093250.json",
     "accuracy": {
-      "qwen_A": [
-        0.433,
-        0.5,
-        0.567
-      ]
+      "qwen_A": [0.433, 0.5, 0.567]
+    }
+  },
+  {
+    "file": "gsm_result_temp0.25_single_qwen_A_20250716_040814.json",
+    "accuracy": {
+      "qwen_A": [0.467, 0.633, 0.7]
+    }
+  },
+  {
+    "file": "gsm_result_temp0.25_single_qwen_A_20250716_040825.json",
+    "accuracy": {
+      "qwen_A": [0.467, 0.633, 0.367]
+    }
+  },
+  {
+    "file": "gsm_result_temp0.25_single_qwen_A_20250716_040845.json",
+    "accuracy": {
+      "qwen_A": [0.467, 0.667, 0.4]
     }
   }
 ]
